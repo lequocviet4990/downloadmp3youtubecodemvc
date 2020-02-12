@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Donwload Mp3 from video Youtube</h1>
+  
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        @if (!string.IsNullOrEmpty(ViewBag.FileNameDownload))
+        {
+            @Html.ActionLink("Click to download", "Download", new { filename = ViewBag.FileNameDownload })
+
+        }
+    </div>
+    
+</div>
